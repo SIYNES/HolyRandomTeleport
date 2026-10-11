@@ -16,6 +16,7 @@ import ru.siynes.locationfinder.LocationFinder;
 import ru.siynes.locationfinder.impl.BiomeFinder;
 import ru.siynes.locationfinder.impl.NearPlayerFinder;
 import ru.siynes.locationfinder.impl.RandomFinder;
+import ru.siynes.locationfinder.impl.RegionFinder;
 import ru.siynes.utils.ColorUtil;
 
 import java.util.EnumMap;
@@ -42,6 +43,9 @@ public class TeleportService {
         finders.put(TeleportMode.RANDOM, new RandomFinder());
         finders.put(TeleportMode.NEAR_PLAYER, new NearPlayerFinder());
         finders.put(TeleportMode.BIOME, new BiomeFinder());
+        if (Bukkit.getPluginManager().isPluginEnabled("ProtectionStones")) {
+            finders.put(TeleportMode.REGION, new RegionFinder());
+        }
     }
 
     public void teleport(Player player, TeleportParams params) {
@@ -49,7 +53,10 @@ public class TeleportService {
         boolean bypass = player.hasPermission("holyrandomteleport.bypass");
 
         LocationFinder finder = finders.get(params.getMode());
-        if (finder == null) return;
+        if (finder == null) {
+            send(player, messagesConfig.getFailedTeleport());
+            return;
+        }
 
         long left = getCooldownLeft(id, params.getName());
         if (left > 0 && !bypass) {

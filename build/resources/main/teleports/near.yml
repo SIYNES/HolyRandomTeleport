@@ -1,0 +1,7 @@
+teleport:
+  mode: NEAR_PLAYER
+  world: "world"
+  min-radius: 20
+  max-radius: 100
+  timeout: 5
+  cooldown: 30

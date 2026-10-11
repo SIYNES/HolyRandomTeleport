@@ -1,0 +1,9 @@
+messages:
+  successful-teleport: "&#28AFFC▶ &fВы телепортированы на X, Y, Z: &#28AFFC{x} {y} {z}"
+  warmup-started: "&#28AFFC▶ &fДо Телепортации {time} сек. &#28AFFCНе двигайтесь!"
+  warmup-cancelled-move: "&#FC2828▶ Телепортация отменена &fиз-за движения"
+  warmup-cancelled-damage: "&#FC2828▶ Телепортация отменена &fиз-за получения урона"
+  failed-teleport: "&#FC2828▶ &fНе удалось найти безопасное место"
+  cooldown: "&#FC2828▶ &fПожалуйста, подождите &#FC2828{time} сек. &fдля использования этой команды"
+  config-reload: "&#28FC59▶ &fКонфигурация плагина &#28FC59успешно &fперезагружена &o&7({teleports_count})"
+  permission-deny: "&#FC2828▶ &fУ вас &#FC2828недостаточно прав &fдля использования этого типа телепортации"

@@ -30,6 +30,7 @@ public class TeleportRegistry {
             plugin.saveResource("teleports/long.yml", false);
             plugin.saveResource("teleports/desert.yml", false);
             plugin.saveResource("teleports/near.yml", false);
+            plugin.saveResource("teleports/base.yml", false);
         }
         File[] files = dir.listFiles((d, n) -> n.endsWith(".yml"));
         if (files == null) return;

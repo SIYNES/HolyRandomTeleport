@@ -4,6 +4,7 @@ main: ru.siynes.HolyRandomTeleport
 api-version: '1.16'
 authors: [SIYNES]
 website: https://github.com/SIYNES
+softdepend: [ProtectionStones, WorldGuard]
 commands:
   rtp:
 permissions:

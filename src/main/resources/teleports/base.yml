@@ -1,0 +1,7 @@
+teleport:
+  mode: REGION
+  world: "world"
+  min-radius: 10
+  max-radius: 60
+  timeout: 5
+  cooldown: 120

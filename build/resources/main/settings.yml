@@ -1,0 +1,6 @@
+settings:
+  warmup:
+    enabled: true
+    seconds: 3
+    cancel-on-move: true
+    cancel-on-damage: true

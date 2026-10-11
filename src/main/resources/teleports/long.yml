@@ -1,0 +1,7 @@
+teleport:
+  mode: RANDOM
+  world: "world"
+  min-radius: 500
+  max-radius: 2500
+  timeout: 15
+  cooldown: 300

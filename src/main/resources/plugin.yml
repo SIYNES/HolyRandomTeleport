@@ -1,0 +1,13 @@
+name: HolyRandomTeleport
+version: '${version}'
+main: ru.siynes.HolyRandomTeleport
+api-version: '1.16'
+authors: [SIYNES]
+website: https://github.com/SIYNES
+commands:
+  rtp:
+permissions:
+  holyrandomteleport.reload:
+    default: op
+  holyrandomteleport.bypass:
+    default: op

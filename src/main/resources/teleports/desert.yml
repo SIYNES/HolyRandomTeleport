@@ -1,0 +1,12 @@
+#может идти долго из-за поиска локации
+teleport:
+  mode: BIOME
+  world: "world"
+  min-radius: 0
+  max-radius: 3000
+  timeout: 30
+  cooldown: 300
+  biomes:
+    - DESERT
+    - DESERT_HILLS
+    - DESERT_LAKES
